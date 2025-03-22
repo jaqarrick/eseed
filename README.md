@@ -22,8 +22,42 @@ A command-line tool for creating and seeding torrents using DHT and public track
    ```
 3. Build the project:
    ```bash
+   make build
+   ```
+   Or manually:
+   ```bash
    go build -o eseed
    ```
+
+## Development
+
+This project includes a Makefile for common development tasks:
+
+```bash
+# Build the project
+make build
+
+# Run tests
+make test
+
+# Clean build artifacts
+make clean
+
+# Download dependencies
+make deps
+
+# Create a test file
+make testfile
+
+# Run in development mode
+make dev
+
+# Kill any running instances
+make kill
+
+# Show all available commands
+make help
+```
 
 ## Usage
 
@@ -86,3 +120,11 @@ The following public trackers are included by default:
 - Make sure port 42069 is available or change it in the code
 - UPnP must be enabled on your router for automatic port forwarding
 - The program requires read access to the input file/directory
+
+## License
+
+MIT License - feel free to use this code for any purpose.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
